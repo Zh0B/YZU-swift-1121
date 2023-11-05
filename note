@@ -5,6 +5,7 @@ struct ContentView: View {
     @State var myNum: Int = 0
     @State var hand: [String] = ["❓","✌🏻", "👊🏻", "🖐🏻", "🤌🏻", "🖖🏻"]
     @State var word: [String] = ["❓","剪刀", "石頭", "布", "蜥蜴", "史巴克"]
+    @State var result:String = ""
     
     var body: some View {
         ZStack {
@@ -19,6 +20,7 @@ struct ContentView: View {
                     
                 Button(action: {
                     num = Int.random(in: 1...5)
+                    determine()
                     
                 }, label: {
                     Text("Play")
@@ -58,7 +60,27 @@ struct ContentView: View {
                 Text("按下左右來選擇要出的拳！")
                     .font(.system(size:30))
                     .foregroundColor(.yellow)
+                    .frame(height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                Text(result)
+                    .font(.system(size: 50))
+                    .foregroundColor(.red)
             }
         }
     }
+    func determine(){
+        if(myNum == 0){
+            result = "你沒出拳..."
+        }else if(num == myNum){
+            result = "Tie"
+        }else if(num == 1 && myNum == 3) || (num == 1 && myNum == 4) || 
+                (num == 2 && myNum == 1) || (num == 2 && myNum == 4) || 
+                (num == 3 && myNum == 2) || (num == 3 && myNum == 5) ||
+                (num == 4 && myNum == 3) || (num == 4 && myNum == 5) || 
+                (num == 5 && myNum == 1) || (num == 5 && myNum == 2){
+            result = "You Lose ！"
+        }else{
+            result = "You Win 🎉"
+        }
+    }
 }
+
