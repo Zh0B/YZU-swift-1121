@@ -1,0 +1,49 @@
+import SwiftUI
+
+struct ContentView: View {
+    @State var num: Int = 0
+    @State var hand: [String] = ["✌🏻", "👊🏻", "🖐🏻", "🤌🏻", "🖖🏻"]
+    @State var word: [String] = ["剪刀", "石頭", "布", "蜥蜴", "史巴克"]
+
+    var body: some View {
+        ZStack { // 使用 ZStack 包装整个视图
+            Color.blue // 设置整个背景颜色
+                .ignoresSafeArea(.all) // 忽略安全区域
+
+            VStack {
+                Text(hand[num])
+                    .font(.system(size: 70))
+                    .frame(width: 300, height: 100, alignment: .center)
+                    .padding(.all, 10)
+                    .foregroundColor(.white)
+
+                Button(action: {
+                    num = Int.random(in: 0...4)
+                }, label: {
+                    Text("Go")
+                        .frame(width: 300, height: 100, alignment: .center)
+                        .font(.system(size: 70))
+                        .foregroundColor(.yellow)
+                        .fontWeight(.heavy)
+                        .background(Color.gray)
+                        .cornerRadius(20)
+                })
+
+                Text(word[num])
+                    .font(.system(size: 50))
+                    .frame(width: 200, height: 100, alignment: .center)
+                    .padding(.all, 10)
+                    .foregroundColor(.red)
+            }
+        }
+    }
+}
+
+@main
+struct YourApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
