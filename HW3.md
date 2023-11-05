@@ -132,7 +132,7 @@ struct managerView: View{
 }
 ```
 
-<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/IMG_0029.jpeg">
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/HW3_img.jpeg">
 
 
 
