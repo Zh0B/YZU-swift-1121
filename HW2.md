@@ -1,4 +1,6 @@
 # HW2
+
+這是特別版的剪刀石頭布，有五種拳可以選擇，使平局機率降至非常低。
 ```Swift
 import SwiftUI
 
@@ -87,7 +89,7 @@ struct ContentView: View {
 }
 ```
 
-<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/HW2_ready_img.jpeg">
-<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/HW2_win_img.jpeg">
-<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/HW2_lose_img.jpeg">
-<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/HW2_tie_img.jpeg">
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/HW2_ready_img.jpg">
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/HW2_win_img.jpg">
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/HW2_lose_img.jpg">
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/HW2_tie_img.jpg">
