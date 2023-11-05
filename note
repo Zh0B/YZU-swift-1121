@@ -6,9 +6,9 @@ struct ContentView: View {
     @State var word: [String] = ["剪刀", "石頭", "布", "蜥蜴", "史巴克"]
 
     var body: some View {
-        ZStack { // 使用 ZStack 包装整个视图
-            Color.blue // 设置整个背景颜色
-                .ignoresSafeArea(.all) // 忽略安全区域
+        ZStack {
+            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]), startPoint: .top, endPoint: .bottom) // 使用渐变背景
+                .edgesIgnoringSafeArea(.all)
 
             VStack {
                 Text(hand[num])
