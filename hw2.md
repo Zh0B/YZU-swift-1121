@@ -1,4 +1,5 @@
-
+#hw1
+```Swift
 import SwiftUI
 
 struct ContentView: View {
@@ -31,3 +32,4 @@ struct ContentView: View {
             .foregroundColor(.red)
     }
 }
+```
