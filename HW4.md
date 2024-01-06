@@ -78,7 +78,7 @@ var drinks = [
     Drinks(name: "NO.5 黛綺莉", image: "Daiquiri", description: "海明威也難以抗拒的清爽滋味\n以蘭姆酒為基底，黛綺莉如白玉般清透的酒液，搭配上微酸甜的口感，看似無害，後勁卻十分強烈"),
     Drinks(name: "NO.6 威士忌酸酒", image: "Whiskey Sour", description: "新手絕對入門調酒\n要選新手的第一杯調酒，這杯絕對是其中之一。\n不管是拿來喝或調製都是低門檻，很少聽說會有人覺得難喝"),
     Drinks(name: "NO.7 曼哈頓", image: "Manhattan", description: "優雅的調酒女王\n透過甜苦艾酒帶來類似綢緞般的口感，除了讓基酒本身的味道變得更加豐富之外，細膩的甜味也提高了整杯酒的層次感"),
-    Drinks(name: "NO. 8 莫希多", image: "Mojito", description: "清涼系飲品的不敗經典\n麻煩給我的愛人來一杯Mojito~\n我喜歡閱讀她微醺時的眼眸~")
+    Drinks(name: "NO.8 莫希多", image: "Mojito", description: "清涼系飲品的不敗經典\n麻煩給我的愛人來一杯Mojito~\n我喜歡閱讀她微醺時的眼眸~")
 ]
 
 struct BasicImageRow: View{
