@@ -214,3 +214,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 ```
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.1.jpg">
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.2.jpg">
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.3.jpg">
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.4.jpg">
