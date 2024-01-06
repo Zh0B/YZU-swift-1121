@@ -1,5 +1,6 @@
 # HW4
-ContentView
+## ContentView
+開啟APP會跳出"未滿18歲請勿飲酒"的提示，點選"知道了"後，進入第一頁。
 ``` Swift
 import SwiftUI
 import Foundation
