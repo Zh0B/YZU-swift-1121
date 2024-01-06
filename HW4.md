@@ -1,5 +1,5 @@
 # HW4
-## ContentView
+**ContentView**
 開啟APP會跳出"未滿18歲請勿飲酒"的提示，點選"知道了"後，進入第一頁。
 ``` Swift
 import SwiftUI
@@ -17,7 +17,7 @@ struct ContentView: View {
                 Group{
                     WelcomeView()
                         .tabItem { 
-                           Image(systemName: "storefront")
+                            Image(systemName: "storefront")
                             Text("Bar")
                         }
                     DrinksListView()
@@ -35,18 +35,16 @@ struct ContentView: View {
                 .toolbarBackground(.visible, for: .tabBar)
             }
             .tint(.brown)
-            
         }
         .onAppear{
             showAlert = true
         }
         .alert(isPresented: $showAlert){
             Alert(title:Text("未滿18歲請勿飲酒"),message:
-            Text("請理性飲酒"),dismissButton:
-            .default(Text("知道了")))
+                    Text("請理性飲酒"),dismissButton:
+                    .default(Text("知道了")))
         }
     }
-    
 }
 
 struct WelcomeView: View{
@@ -70,8 +68,10 @@ struct WelcomeView: View{
         }
     }
 }
+
 ```
-<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.1.jpg">
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.6.jpg">
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.0.jpg">
 
 DrinksListView
 ```Swift
@@ -165,6 +165,7 @@ struct DrinksListView: View{
     }
 }
 ```
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.1.jpg">
 <img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.2.jpg">
 <img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.3.jpg">
 
