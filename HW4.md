@@ -2,8 +2,10 @@
 ContentView
 ``` Swift
 import SwiftUI
+import Foundation
 
 struct ContentView: View {
+    @State private var showAlert = false
     var body: some View {
         VStack {
             Text("來買醉Bar")
@@ -33,6 +35,14 @@ struct ContentView: View {
             }
             .tint(.brown)
             
+        }
+        .onAppear{
+            showAlert = true
+        }
+        .alert(isPresented: $showAlert){
+            Alert(title:Text("未滿18歲請勿飲酒"),message:
+            Text("請理性飲酒"),dismissButton:
+            .default(Text("知道了")))
         }
     }
     
