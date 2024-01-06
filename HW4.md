@@ -1,5 +1,5 @@
 # HW4
-**ContentView**  
+## ContentView
 開啟APP會跳出"未滿18歲請勿飲酒"的提示，點選"知道了"後，進入第一頁。
 ``` Swift
 import SwiftUI
@@ -70,12 +70,12 @@ struct WelcomeView: View{
 }
 
 ```
-跳出通知  
-<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.6.jpg">
-點選後  
+**跳出通知**  
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.6.jpg">  
+**點選後**  
 <img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.0.jpg">
 
-**DrinksListView**  
+## DrinksListView
 第二頁是酒單，我這裡顯示了較為有名的8種酒，點選後會跳出關於這種酒的介紹，點叉叉或滑掉可以跳出。
 ```Swift
 import SwiftUI
@@ -135,7 +135,7 @@ struct DrinksDetailView:View{
                     Button(action:{
                         self.presentationMode.wrappedValue.dismiss()
                     },label:{
-                        Image(systemName:"chevron.down.circle.fill")
+                        Image(systemName:"clear.fill")
                             .font(.largeTitle)
                             .foregroundColor(.white)
                     })
@@ -168,11 +168,11 @@ struct DrinksListView: View{
     }
 }
 ```
-<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.7.jpg">
-<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.2.jpg">
-<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.3.jpg">
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.7.jpg">  
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.8.jpg">  
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.9.jpg">  
 
-CocktailView
+## CocktailView
 ```Swift
 import SwiftUI
 
