@@ -60,6 +60,8 @@ struct WelcomeView: View{
     }
 }
 ```
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.1.jpg">
+
 DrinksListView
 ```Swift
 import SwiftUI
@@ -152,6 +154,9 @@ struct DrinksListView: View{
     }
 }
 ```
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.2.jpg">
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.3.jpg">
+
 CocktailView
 ```Swift
 import SwiftUI
@@ -214,7 +219,5 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 ```
-<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.1.jpg">
-<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.2.jpg">
-<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.3.jpg">
 <img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.4.jpg">
+<img src="https://github.com/Zh0B/YZU-swift-1121/blob/main/hw4.5.jpg">
